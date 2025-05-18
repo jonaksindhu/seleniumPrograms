@@ -1,0 +1,19 @@
+
+plugins {
+    id 'java'
+    id 'application'
+}
+
+application {
+    mainClass = 'org.example.FindingBrokenLinks'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.seleniumhq.selenium:selenium-java:4.20.0'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.8.0'
+    testImplementation 'org.testng:testng:7.4.0'
+}
